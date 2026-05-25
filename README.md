@@ -1,5 +1,10 @@
 # mcp-server-starter
 
+[![CI](https://github.com/thiagoger/mcp-server-starter/actions/workflows/ci.yml/badge.svg)](https://github.com/thiagoger/mcp-server-starter/actions/workflows/ci.yml)
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org)
+[![MCP](https://img.shields.io/badge/protocol-MCP-7C3AED.svg)](https://modelcontextprotocol.io)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
 > A minimal, production-shaped [Model Context Protocol](https://modelcontextprotocol.io) server in Python - exposes synthetic-data generation as tools any AI agent can call.
 
 MCP is the protocol that lets LLM clients (Claude Desktop, Claude Code, IDE agents) call your tools and read your resources over a clean, typed interface. This repo is a small, readable reference for how an MCP server is actually structured: typed tool functions, a resource endpoint, and stdio transport - the same shape I use when building MCP servers against real APIs (OAuth-guarded SaaS backends), minus the credentials.
